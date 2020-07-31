@@ -20,7 +20,8 @@ onSubmit(e) {
     username: this.state.username,
   };
   console.log(newUser);
-  axios.post('http://localhost:5000/users/add', newUser)
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////
+  axios.post('/users/add', newUser)
   .then(res => console.log(res.data))
   .catch(err => console.log(err));
 
